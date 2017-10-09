@@ -1,6 +1,6 @@
 {
   "name": "apiki-branch-pattern",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "normalize branchs in projects",
   "main": "index.js",
   "scripts": {
