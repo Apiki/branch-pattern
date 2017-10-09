@@ -27,5 +27,8 @@
   "homepage": "https://github.com/Apiki/branch-pattern#readme",
   "dependencies": {
     "colors": "^1.1.2"
+  },
+  "bin": {
+    "apiki-branch-pattern": "./index.js"
   }
 }
