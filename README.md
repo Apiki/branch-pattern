@@ -4,7 +4,7 @@
 * [Node.js](https://nodejs.org/en/download/) (>= v6.10.3)
 
 ## Installation
-`npm install apiki-branch-pattern`
+`npm install apiki-branch-pattern --save-dev` OR `yarn add apiki-branch-pattern --dev`
 
 ## Usage in package.json
 `"prepush": "git branch | grep \\* | cut -d ' ' -f2 | xargs apiki-branch-pattern -p='^care_([0-9]+)_(.+)$'"`
