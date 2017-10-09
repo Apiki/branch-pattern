@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const colors  = require( 'colors' );
+const verify  = require( './verify' );
 const branch  = process.argv[3];
 const pattern = process.argv[2];
 
@@ -14,14 +15,11 @@ if ( !branch ) {
 	process.exit( 1 );
 }
 
-if ( branch.match(/^(master|apikihomolog|apikiprojeto)$/) ) {
-	console.log( `branch: ${branch} is valid`.green );
-	process.exit( 0 );
-}
-
-if ( !branch.match( new RegExp( pattern.replace( '-p=', '' ) ) ) ) {
+if ( !verify( branch, pattern.replace( '-p=', '' ) ) ) {
 	console.log( 'branch is not valid user pattern'.red );
 	process.exit( 1 );
 }
 
-console.log( `branch: ${branch} is valid`.green );
+console.log( `branch: '${branch}' is valid`.green );
+
+
