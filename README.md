@@ -7,7 +7,7 @@
 `npm install apiki-branch-pattern`
 
 ## Usage in package.json
-`"prepush": "git branch | grep \* | cut -d ' ' -f2 | xargs apiki-branch-pattern -p='^care_([0-9]+)_(.+)$'"`
+`"prepush": "git branch | grep \\* | cut -d ' ' -f2 | xargs apiki-branch-pattern -p='^care_([0-9]+)_(.+)$'"`
 
 ## Contributing
 1. Fork it!
