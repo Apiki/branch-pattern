@@ -20,7 +20,7 @@ if ( branch.match(/^(master|apikihomolog|apikiprojeto)$/) ) {
 }
 
 if ( !branch.match( new RegExp( pattern.replace( '-p=', '' ) ) ) ) {
-	console.log( 'branch is not valid user pattern'.green );
+	console.log( 'branch is not valid user pattern'.red );
 	process.exit( 1 );
 }
 
