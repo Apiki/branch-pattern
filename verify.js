@@ -1,5 +1,5 @@
 module.exports = function(branch, pattern) {
-	if ( branch.match( /^(master|apikihomolog|apikiprojeto)$/ ) ) {
+	if ( branch.match( /^(master|apikihomolog|apikiprojeto|stage|homolog)$/ ) ) {
 		return true;
 	}
 
